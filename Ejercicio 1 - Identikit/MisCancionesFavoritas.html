@@ -3,190 +3,217 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Página de Tomás - Canciones Favoritas</title>
+		<title>Identikit - Red Velvet</title>
+		<link rel="icon" href="../Images/HomePage/IdentikitIcon.png" type="image/x-icon">
 		<style type="text/css">
-		
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-			height: 100%; 
-			max-height: 100%; 
-			font-family:Sans-serif;
-			line-height: 1.5em;
-		}
+            .galeria {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px auto;
+                width: 80%;
+            }
 
-		main {
-			position: fixed;
-			top: 50px; /* Set this to the height of the header */
-			bottom: 50px; /* Set this to the height of the footer */
-			left: 230px; 
-			right: 0;
-			overflow: auto; 
-			background: #fff;
-		}
-				
-		#header {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 50px; 
-			overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-			background: #BCCE98;
-		}
+            .columna {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            }
 
-		#footer {
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			height: 50px; 
-			overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
-			background: #BCCE98;
-		}
-				
-		#nav {
-			position: absolute; 
-			top: 50px; /* Set this to the height of the header */
-			bottom: 50px; /* Set this to the height of the footer */
-			left: 0; 
-			width: 230px;
-			overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
-			background: #DAE9BC; 		
-		}
-		
-		.innertube {
-			margin: 15px; /* Provides padding for the content */
-		}
-		
-		p {
-			color: #555;
-		}
+            .columna img {
+                width: 100%;
+                max-width: 150px; /* Tamaño de las fotos cuadradas */
+                height: 150px;
+                border-radius: 12px;
+                transition: background-color 0.3s ease, filter 0.3s ease; /* Transición suave */
+            }
 
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
-		
-		nav ul a {
-			color: darkgreen;
-			text-decoration: none;
-		}
-				
-		/*IE6 fix*/
-		* html body{
-			padding: 50px 0 50px 230px; /* Set the first value to the height of the header, the third value to the height of the footer, and last value to the width of the nav */
-		}
-		
-		* html main{ 
-			height: 100%; 
-			width: 100%; 
-		}
-		
-		</style>	
+            .columna img:hover {
+                background-color: #9A1750;
+                filter: brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(300%) opacity(0.8); /* Aplica el efecto rojo semitransparente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+            }
+		</style>
+		<link rel="stylesheet" href="Styles.css">	
 	</head>
 	
 	<body>		
 
-		<header id="header">
-			<div class="innertube">
-				<a href="IDTKlayout.html"><<< Volver al Inicio</a> | Canciones Favoritas
-			</div>
-		</header>
+		<div id="header">
+            <nav class="nav-bar">
+                <!-- Enlaces centrados -->
+                <div class="nav-links-container">
+					<a href="IDTKlayout.html" class="nav-link">Inicio</a>
+					<a href="#" class="nav-link active">Red Velvet</a>
+					<a href="TierList.html" class="nav-link">Subway Tierlist</a>
+					<a href="TypoTester.html" class="nav-link">Typo Tester</a>
+					<a href="Clase1.html" class="nav-link">IDTK Legacy</a>
+				</div>
+
+                <!-- Botón atrás -->
+                <a href="../HomeScreen.html" class="nav-link-back">
+                    <img src="FotosPrincipal/ExitAppIcon.png" class="nav-link-back-icon" alt="Flecha atrás">
+                    Salir del Sitio
+                </a>
+            </nav>
+        </div>
 				
 		<main>
 			<div class="innertube">
-				<center><table style="width:85%;" border="0.5;">
-                    <tbody>
-                    <tr>
-                    <td style="text-align:start; vertical-align: top;">&nbsp;
-				        <h1 id="primerTitulo">Mis Canciones Favoritas</h1>
-				        <p> En esta seccion vamos a pasar por todos y cada uno de géneros musicales favoritos, los cuales están representados en 3 playlist de Spotify. 
-                        Al finalizar, voy a estar hablando de mi grupo musical favorito, Red Velvet, a quienes les dedicaré una playlist para ellas solas.</p>
-                    </td>
-                    </tr>
-                    </tbody>
-                </table></center>
+                <div class="contenedor-imagen-sobre-texto">
+					<img id="portada" src="FotosPrincipal/FotosCanciones/RedVelvetCosmic.jpeg" alt="Red Velvet">
+					<h1> This Is: RED VELVET </h1>
+					<p> Red Velvet es un grupo surcoreano de K-pop formado por SM Entertainment en 2014. Compuesto por cinco integrantes: Irene, Seulgi, Wendy, Joy y Yeri, su música destaca por mezclar conceptos brillantes y alegres ("Red") con estilos más oscuros y sofisticados ("Velvet"). Son conocidas por su versatilidad musical, explorando géneros como el pop, R&B y EDM. Han logrado gran éxito con canciones icónicas como Red Flavor y Psycho, y se destacan tanto por su talento vocal como por sus impactantes presentaciones visuales.</p>
+				</div>
 
-                <hr style="width:75%; color: brown;">
+				<div class="separador-invisible"></div>
+				<h1>Conocé a las Protagonistas</h1>
 
-                <center><table style="width:75% ;" border="0">
-                    <tbody>
-                    <tr>
-                    <td style="text-align:start; vertical-align: top;">&nbsp;
-                        <h2> KPOP, Mi Estilo Favorito </h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        <center><h4> TWICE - "Singal" </h4>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VQtonf1fv_s?si=g_DAIG6jspo1BVt1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-                    </td>
-                    <td style="width: 25%;">&nbsp;
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2fzW3AJ8TJaLQmhHiMoQ3d?utm_source=generator" width="100%" height="560" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="text-align:start; vertical-align: top;">&nbsp;
-                        <h2> POP INTERNACIONAL </h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </td>
-                    <td style="width: 25%;">&nbsp;
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7BvRkntcYXGxsZEnhleNsl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td style="text-align:start; vertical-align: top;">&nbsp;
-                        <h2> ROCK NACIONAL </h2>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        
-                    </td>
-                    <td style="width: 25%;">&nbsp;
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4LdLermw9e7Z58R8WNXOXD?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table></center>
+                <section class="galeria">
+					<div class="columna">
+						<img src="FotosPrincipal/FotosCanciones/irenePFP.png" alt="Imagen 1" onclick="mostrarInformacion(1)">
+					</div>
+					<div class="columna">
+						<img src="FotosPrincipal/FotosCanciones/joyPFP.jpg" alt="Imagen 2" onclick="mostrarInformacion(2)">
+					</div>
+					<div class="columna">
+						<img src="FotosPrincipal/FotosCanciones/SeulgiPFP.jpg" alt="Imagen 3" onclick="mostrarInformacion(3)">
+					</div>
+					<div class="columna">
+						<img src="FotosPrincipal/FotosCanciones/wendyPFP.jpg" alt="Imagen 4" onclick="mostrarInformacion(4)">
+					</div>
+					<div class="columna">
+						<img src="FotosPrincipal/FotosCanciones/yeriPFP.jpg" alt="Imagen 5" onclick="mostrarInformacion(5)">
+					</div>
+				</section>
+
+				<!-- Sección de texto e imagen dinámica -->
+				<div class="contenedor-recuadro">
+					<div class="texto">
+					  <h2></h2>
+					  <p id="descripcion"></p>
+					</div>
+					
+					<div class="imagen">
+					  <img style="width: 500px; height: auto;" id="imagen-info" src="" alt="">
+					</div>
+				  </div>
+
+                <div class="separador-invisible"></div>
+				<h1 id="titulo">Concepto RED</h1>
+                <div class="contenedor-principal">
+					<!-- Primer contenedor -->
+					<div class="contenedor">
+						<h2>Russian Roulette</h2>
+						<p>2016 - The 3rd MiniAlbum</p>
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6MNlcai3skKLKv5syzFwC3?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
+
+					<div class="contenedor">
+						<h2>Rookie</h2>
+						<p>2017 - The 4th MiniAlbum</p>
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5Bg49LEfyoZzKpQsEwRCtI?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
 				
-                    <hr style="width:75%; color: brown;">
+					<!-- Segundo contenedor -->
+					<div class="contenedor">
+						<h2>The Red</h2>
+                        <p>2015 - The 1st Album</p>
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6YL9J0E6PGtYzkhyMxnmXd?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
+				
+				</div>
 
-                    <center><table style="width:75%;" border="0.5;">
-                        <tbody>
-                        <tr>
-                            <td style="text-align:start; vertical-align: top;">&nbsp;
-                                <h2> solo RED VELVET </h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                <center><h4> RED VELVET Irene & Seulgi- "Naughty" </h4>
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wCWoUUWwdqg?si=CmoMrCF4M5AjJF9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
-                            </td>
-                            <td style="width: 25%;">&nbsp;
-                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1tH2wjvHqLfHMSNOj51J7Z?utm_source=generator" width="100%" height="560" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table></center>
-                    
+                <div class="separador-invisible"></div>
+				<h1 id="titulo">Concepto VELVET</h1>
+                <div class="contenedor-principal">
+					<!-- Primer contenedor -->
+					<div class="contenedor">
+						<h2 id="subtitulo">Perfect Red Velvet</h2>
+						<p>2017 - The 2nd Album Repackage</p>
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0OkJThJls8FO1lutMzMDJ0?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
+
+					<div class="contenedor">
+						<h2 id="subtitulo">Chill Kill</h2>
+						<p>2023 - The 3rd Album</p>
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4UUICitfodUVCNhzmDFbrO?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
+				
+					<!-- Segundo contenedor -->
+					<div class="contenedor">
+						<h2 id="subtitulo">Cosmic</h2>
+                        <p>2024 - 10th Year Anniversary Album</p>
+						<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5lHtH6O6mCnVx1MNuPPBQK?utm_source=generator" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+					</div>
+				
+				</div>
+
+				
+                <div class="separador-invisible"></div>
+				<h1 id="titulo">Video Destacado</h1>
+				
+				<div class="contenedor-imagen-sobre-texto">	
+					<iframe width="100%" height="475px" src="https://www.youtube.com/embed/PpGgdmbXBuk?si=xix3kwZidpHsLIod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+				
 			</div>
+
 		</main>
 
+		<script>
+				function mostrarInformacion(imagen) {
+				var titulo = document.querySelector('.texto h2');
+				var descripcion = document.getElementById('descripcion');
+				var imagenInfo = document.getElementById('imagen-info');
+		
+				// Información de cada imagen
+				var info = {
+					1: {
+						titulo: 'IRENE',
+						descripcion: 'Irene, nacida el 29 de marzo de 1991 en Daegu, Corea del Sur, es la líder, rapera, bailarina y vocalista de Red Velvet. Se unió a SM Entertainment en 2009 tras pasar las audiciones globales. Antes de debutar, fue parte del proyecto SMROOKIES. Es conocida por su elegancia y habilidades en rap, danza moderna y actuación, además de ser admiradora de BoA. Su nombre artístico proviene de la diosa de la paz. Ha sido destacada varias veces en los rankings de los rostros más hermosos del mundo.',
+						imagen: 'FotosPrincipal/FotosCanciones/ireneFULL.jpg'
+					},
+					2: {
+						titulo: 'JOY',
+						descripcion: 'Joy, nacida el 3 de septiembre de 1996 en la Isla Jeju, Corea del Sur, es vocalista, rapera y bailarina de Red Velvet. Con una voz soprano lírica ligera, tiene un rango vocal de E3 a A5. Se unió a SM Entertainment en 2012, sin que sus padres lo supieran, y fue la maknae del grupo hasta la inclusión de Yeri en 2015. Es conocida por su carisma y visuales, siendo reconocida junto a Irene como una de las "visuales" del grupo. En 2021, debutó como solista con el álbum especial Hello, un remake de éxitos de los 90 y 2000.',
+						imagen: 'FotosPrincipal/FotosCanciones/joyFULL.jpg'
+					},
+					3: {
+						titulo: 'SEULGI',
+						descripcion: 'Seulgi, nacida el 10 de febrero de 1994 en Ansan, Gyeonggi-do, Corea del Sur, es vocalista y bailarina de Red Velvet, destacada por su habilidad en la danza y su voz soprano lírica ligera. Entrenó durante 7 años en SM Entertainment antes de debutar y es conocida por su talento en guitarra y sus habilidades artísticas, como el dibujo. Forma parte de la sub-unidad IRENE X SEULGI y del grupo proyecto Girls On Top. En 2022, lanzó su primer mini álbum solista 28 Reasons. Su lema es "Vamos a ser personas que puedan dar y recibir amor".',
+						imagen: 'FotosPrincipal/FotosCanciones/seulgiFULL.jpg'
+					},
+					4: {
+						titulo: 'WENDY',
+						descripcion: 'Wendy, nacida el 21 de febrero de 1994 en Seongbuk-Dong, Seúl, Corea del Sur, es vocalista y bailarina de Red Velvet, reconocida por su impresionante rango vocal de 4 octavas. Tiene nacionalidad coreano-canadiense y es multilingüe, hablando coreano, inglés, francés y español básico. Debutó como solista en 2021 con el mini álbum Like Water, una balada pop acústica, y en 2024 regresó con su segundo álbum Wish You Hell. Wendy es conocida por su talento musical, tocando la flauta, guitarra y saxofón, y por su lema: "Piensa siempre positivamente. Haz tu mejor esfuerzo y trabaja duro".',
+						imagen: 'FotosPrincipal/FotosCanciones/wendyFULL.jpg'
+					},
+					5: {
+						titulo: 'YERI',
+						descripcion: 'Finalmente, hablaré de Red Velvet, mi grupo musical favorito. ¡No te lo pierdas!',
+						imagen: 'FotosPrincipal/FotosCanciones/yeriFULL.jpg'
+					}
+				};
+		
+				// Actualizar la información según la imagen seleccionada
+				if (info[imagen]) {
+					titulo.textContent = info[imagen].titulo;
+					descripcion.textContent = info[imagen].descripcion;
+					imagenInfo.src = info[imagen].imagen;
+				}
+			}
+		</script>
+		
+
 		<nav id="nav">
-			<div class="innertube">
-				<h2>Navegación</h2>
-				<ul>
-                    <li> <a href="IDTKlayout.html">• Acerca de Mí</a> </li>
-                    <li> • Canciones Favoritas </li>
-                    <li> <a href="TierList.html">• NYC Subway Tierlist </a></li>
-                    <li> • Top 3 Mejores Páginas </li>
-                    <li> • About Furry Fandom </li>
-                    <li> <a href="Clase1.html">• Identikit Legacy</a> </li>
-                </ul>
-			</div>
+			
 		</nav>	
 		
 		<footer id="footer">
-			<div class="innertube">
-				<center><p><a href="#primerTitulo">Volver arriba</a></p></center> 
+			<div class="nav-bar">
+				<a href="#portada" class="nav-link">Volver Arriba</a>
 			</div>
-		</footer>	
-			
+		</footer>
+
 	</body>
 </html>
