@@ -108,24 +108,37 @@
 
     /* Contenedor donde se colocarán los links */
         .link-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 70px;
             width: 65%;
             background-color: #F2F1ED;
-            border-radius: 20px;
+            border-radius: 50px;
             margin: 10px auto; /* Centra el botón horizontalmente */
-            display: flex;
-            align-items: center; 
             padding: 0 10px; 
             box-sizing: border-box; 
-            transition: background-color 0.5s ease; /* Efecto suave en hover */
+            transition: 0.5s ease; /* Efecto suave en hover */
             text-decoration: none; /* Eliminar subrayado */
         }
 
-    /* Íconos dentro de los botones */
+    /* Íconos Borde dentro de los botones */
         .link-button-icon {
-            width: 40px; 
-            height: 40px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px; 
+            height: 50px; 
             margin-left: 5px; 
+            background-color: #EE4C7C;
+            border-radius: 100%;
+            transition: 0.5s ease; /* Efecto suave en hover */
+        }
+    /* Íconos dentro de los botones */
+        .link-button-icon-image {
+            width: 40px; 
+            height: 40px;
+            position: centre;
         }
 
     /* Texto dentro de los botones */
@@ -141,6 +154,14 @@
 
     /* Efecto para pintar cada botón */
         .link-button:hover {
+            height: 75px;
+            width: 70%;
             background-color: #e68099; 
+            border-radius: 20px;
             cursor: pointer;
+        }
+
+    /* Cambios en el ícono cuando se hace hover en el botón */
+        .link-button:hover .link-button-icon {
+            border-radius: 12px; /* Cambia el border-radius del ícono */
         }
